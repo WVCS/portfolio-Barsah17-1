@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <hp id="hp">
+      <img id="hole" src="IMGS/hole.jpg" alt="white hole" />
+      <div class="nv">
+        <li>
+          <a href="#info"">About</a>
+          <a href=" #pj">Projects</a>
+        </li>
+      </div>
+    </hp>
+    <about id="info">
+      <div class="nav">
+        <a href="#pj">Projects</a>
+      </div>
+      <div class="flex">
+        <section class="pic">
+          <img src="IMGS/picture.jpg" alt="picture">
+        </section>
+        <section class="bio">
+          <h1>Web Design Learner</h1>
+        </section>
+      </div>
+    </about>
+    <pj id="pj">
+      <div class="nav">
+        <a href="#info">About</a>
+        <a href="#hp">Home</a>
+      </div>
+      <div class="pjs">
+        <a href="https://codepen.io/NTN367/pen/oNjxpaz"><img src="IMGS/FF7.jpg" alt=""></a>
+    </pj>
+  </body>
+  <style>
+    html,
+    body {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+    hp {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    #hole {
+      position: absolute;
+      height: 60vh;
+      z-index: 0;
+    }
+
+    .nv {
+      text-align: center;
+      z-index: 1;
+
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      padding: px;
+      text-decoration: none;
+      text-align: center;
+
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 2.5rem;
+      padding: 50px;
+      color: red;
+    }
+
+    a:hover {
+      color: red;
+      opacity: .3;
+    }
+
+    a:active {
+      color: white;
+    }
+
+    .nav {
+      height: 55px;
+      width: 100%;
+      background-color: lightgray;
+      opacity: 0.7;
+      position: relative;
+      text-align: center;
+    }
+
+    .flex {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .pic {
+      position: relative;
+      flex-basis: 50%;
+      align-self: center;
+      text-align: center;
+    }
+
+    .bio {
+      position: relative;
+      flex-basis: 50%;
+      text-align: center;
+      align-self: center;
+    }
+
+    .pjs {
+      height: 100%;
+      position: relative;
+      text-align: center;
+      justify-content: center;
+      height: 100vh;
+      size: 100%;
+      padding-top: 25px;
+    }
+
+    @media only screen and (max-width:1024px) {
+      iframe {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        margin: 0;
+        padding: none;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        overflow: hidden;
+      }
+
+      .nv {
+        padding: 0;
+      }
+    }
+
+    @media only screen and (max-width:787px) {
+      iframe {
+        position: fixed;
+        height: 500px;
+        width: 787px;
+        top: 270px;
+      }
+    }
+
+    @media only screen and (max-width:600px) {
+      iframe {
+        position: fixed;
+        width: 600px;
+        top: 260px;
+      }
+    }
+
+    @media only screen and (max-width:350px) {
+      iframe {
+        position: fixed;
+        width: 100%;
+        top: 270px;
+      }
+
+      .nv {
+        text-align: center;
+        postion: fixed;
+      }
+    }
+
+    </html>
